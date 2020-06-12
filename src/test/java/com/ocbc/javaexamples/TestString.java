@@ -11,7 +11,7 @@ public class TestString {
         return "test " + abc + " test2 " + bcd;
     }
 
-    public TestString(String abc , String bcd){
+    public TestString(String abc, String bcd) {
         this.abc = abc;
         this.bcd = bcd;
     }

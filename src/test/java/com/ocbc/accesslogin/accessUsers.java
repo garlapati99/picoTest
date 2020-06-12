@@ -1,39 +1,32 @@
 package com.ocbc.accesslogin;
 
-import com.google.gson.JsonObject;
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.http.Method;
-import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
-import io.restassured.mapper.ObjectMapperType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import org.apache.commons.io.IOUtils;
 import org.junit.Assert;
-import org.testng.asserts.SoftAssert;
 import utils.BaseUtil;
-import utils.output.Datum;
-import utils.output.Output;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.List;
 import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
-public class accessUsers{
+public class accessUsers {
 
     private final BaseUtil base;
     public static int total;
     private Scenario scenario;
 
-    public accessUsers(BaseUtil base){
+    public accessUsers(BaseUtil base) {
         this.base = base;
     }
 
@@ -42,8 +35,8 @@ public class accessUsers{
     private Map headers;
 
     @Before
-    public void init(Scenario scenario){
-        this.scenario=scenario;
+    public void init(Scenario scenario) {
+        this.scenario = scenario;
     }
 
 
@@ -75,7 +68,7 @@ public class accessUsers{
 
         scenario.write("Test");
         String outout = base.response.getBody().asString();
-        System.out.println("output is"+outout);
+        System.out.println("output is" + outout);
     }
 
     @Then("validate the response code as {int}")

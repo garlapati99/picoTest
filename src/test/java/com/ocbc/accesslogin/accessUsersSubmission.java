@@ -1,16 +1,18 @@
 package com.ocbc.accesslogin;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.When;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.When;
 import io.restassured.http.Method;
 import io.restassured.specification.RequestSpecification;
 import org.apache.commons.io.IOUtils;
 import utils.BaseUtil;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class accessUsersSubmission {
@@ -23,12 +25,13 @@ public class accessUsersSubmission {
     private Scenario scenario;
 
 
-    public accessUsersSubmission(BaseUtil base){
+    public accessUsersSubmission(BaseUtil base) {
         this.base = base;
     }
+
     @Before
-    public void init(Scenario scenario){
-        this.scenario=scenario;
+    public void init(Scenario scenario) {
+        this.scenario = scenario;
     }
 
 
