@@ -55,6 +55,6 @@ public class accessUsersSubmission {
                 .extract()
                 .response();
         base.response.prettyPrint();
-        scenario.write(base.response.prettyPrint());
+        scenario.log(base.response.prettyPrint());
     }
 }

@@ -110,41 +110,6 @@
             <scope>test</scope>
         </dependency>
 
-
-        <!--        <dependency>-->
-        <!--            <groupId>io.cucumber</groupId>-->
-        <!--            <artifactId>cucumber-java</artifactId>-->
-        <!--            <version>4.2.0</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
-
-        <!--        <dependency>-->
-        <!--            <groupId>io.cucumber</groupId>-->
-        <!--            <artifactId>cucumber-junit</artifactId>-->
-        <!--            <version>4.2.0</version>-->
-        <!--            <scope>test</scope>-->
-        <!--        </dependency>-->
-
-<!--                &lt;!&ndash; For dependency Injection &ndash;&gt;-->
-<!--                <dependency>-->
-<!--                    <groupId>io.cucumber</groupId>-->
-<!--                    <artifactId>cucumber-picocontainer</artifactId>-->
-<!--                    <version>4.2.0</version>-->
-<!--                    <scope>test</scope>-->
-<!--                </dependency>-->
-
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports-cucumber4-adapter</artifactId>
-            <version>1.0.7</version>
-        </dependency>
-
-        <!--        <dependency>-->
-        <!--            <groupId>com.aventstack</groupId>-->
-        <!--            <artifactId>extentreports</artifactId>-->
-        <!--            <version>4.0.9</version>-->
-        <!--        </dependency>-->
-
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
@@ -162,6 +127,7 @@
             <artifactId>log4j-api</artifactId>
             <version>2.13.1</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -181,6 +147,17 @@
             <version>3.10</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.0.0-alpha-6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.0.0</version>
+        </dependency>
 
     </dependencies>
 
